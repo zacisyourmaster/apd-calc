@@ -1,0 +1,44 @@
+<header class="bg-black/70">
+  <div class="flex flex-col items-center">
+    <h1>APDCalc</h1>
+    <p>A handy calculator to maximize <span>Alcohol Per Dollar</span></p>
+  </div>
+</header>
+<main>
+  <div class="calc" id="calc-container">
+    <form id="calc">
+      <div class="input-row">
+        <div class="field">
+          <label for="pct">Percentage:</label>
+          <input type="text" id="pct" name="pct" required>
+        </div>
+
+        <div class="field">
+          <label for="vol">Volume:</label>
+          <div class="inline">
+            <input type="text" id="vol" name="vol" required>
+            <select id="unit" name="unit">
+              <option value="mL">mL</option>
+              <option value="oz">oz</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="price">Price:</label>
+          <input type="text" id="price" name="price" required>
+        </div>
+      </div>
+
+      <div class="submit-row">
+        <input class="submit" type="submit" />
+      </div>
+    </form>
+    <div id="result-container" class="">
+    </div>
+  </div>
+
+</main>
+<footer>
+  <p>Created by <a href="https://zacisyourmaster.github.io" target="_blank">Zach Smith</a></p>
+</footer>

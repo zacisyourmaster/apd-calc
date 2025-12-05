@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: aliceblue;
+  font-family: Verdana, Geneva, sans-serif;
+  display: flex;
+  flex-direction: column; /* Stack header and main content */
+  align-items: center;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+header {
+  width: 100%;
+  padding: 1em 0 1.5em 0;
+  text-align: center;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: clamp(2em, 5vw, 3em);
+}
+header p span {
+  font-style: italic;
+}
+main {
+  min-width: 50%;
+  width: fit-content;
+  /* border: 2px solid whitesmoke;*/
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.calc {
+  background: dimgray;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 25em;
+  box-shadow: 3px 2px 2px black;
+}
+
+.input-row {
+  display: flex;
+  gap: 1.5rem; /* spacing between columns */
+  margin-bottom: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.inline {
+  display: flex;
+  gap: 0.5rem;
+}
+
+input,
+select {
+  background-color: white;
+  border-radius: 4px;
+  padding: 0.4em;
+  color: black;
+  margin-top: 0.3em;
+}
+
+.submit-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+input.submit {
+  padding: 0.5em 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.result-container {
+  border: 2px solid white;
+  border-radius: 8px;
+  background: rgba(105, 105, 105, 0.5);
+  padding: 0.5em;
+  font-size: 1.125em;
+  text-align: center;
+}
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 0.5em 0.5em 1em;
+  font-size: 0.8em;
+}
+footer p {
+  color: rgba(255, 255, 255, 0.4);
+}
